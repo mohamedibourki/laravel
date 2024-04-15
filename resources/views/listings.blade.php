@@ -7,16 +7,12 @@
             {{ $listing['id'] }}
             <br>
             <br>
-            {{ $listing['title'] }}
-            <br>
-            <br>
-            {{ $listing['price'] }}
+            <a href="/listings/{{ $listing['id'] }}">
+                {{ $listing['title'] }}
+            </a>
             <br>
             <br>
             {{ $listing['description'] }}
-            <br>
-            <br>
-            <img src={{ $listing['image'] }} alt="" width="300px" height="400px">
         </h2>
     @endforeach
 @else
